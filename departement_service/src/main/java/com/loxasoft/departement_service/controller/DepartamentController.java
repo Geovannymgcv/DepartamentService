@@ -26,7 +26,7 @@ public class DepartamentController {
 		return departamentService.createDepartament(departament);
 	}
 	
-	@GetMapping
+	@GetMapping("/{id}")
 	public Departament getDepartamentbyId(@PathVariable Integer id) {
 		return departamentService.getDepartamentbyId(id);
 	}
